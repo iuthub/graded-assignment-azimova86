@@ -1,0 +1,74 @@
+===Database laravel_todolist
+
+== Table structure for table failed_jobs
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|bigint(20)|No|
+|connection|text|No|
+|queue|text|No|
+|payload|longtext|No|
+|exception|longtext|No|
+|failed_at|timestamp|No|current_timestamp()
+== Dumping data for table failed_jobs
+
+== Table structure for table migrations
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(10)|No|
+|migration|varchar(255)|No|
+|batch|int(11)|No|
+== Dumping data for table migrations
+
+|1|2014_10_12_000000_create_users_table|1
+|2|2019_08_19_000000_create_failed_jobs_table|1
+|3|2014_10_12_100000_create_password_resets_table|2
+|4|2020_04_17_122030_create_tasks_table|2
+== Table structure for table password_resets
+
+|------
+|Column|Type|Null|Default
+|------
+|email|varchar(255)|No|
+|token|varchar(255)|No|
+|created_at|timestamp|Yes|NULL
+== Dumping data for table password_resets
+
+== Table structure for table tasks
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|bigint(20)|No|
+|newTask|varchar(255)|No|
+|user_id|bigint(20)|No|
+|created_at|timestamp|Yes|NULL
+|updated_at|timestamp|Yes|NULL
+== Dumping data for table tasks
+
+|1|aren't you tired?|1|2020-04-17 17:31:48|2020-04-17 17:31:48
+|2|no and u?|1|2020-04-17 17:32:29|2020-04-17 17:32:29
+|3|no i am okay and happy cause we almost finished|1|2020-04-17 17:33:05|2020-04-17 17:33:05
+|4|:)|1|2020-04-17 17:33:25|2020-04-17 17:33:25
+|6|it is working|1|2020-04-17 17:34:20|2020-04-17 17:43:06
+|7|now we check whether we can edit|1|2020-04-17 17:34:42|2020-04-17 17:34:42
+|8|daaaaa|1|2020-04-17 17:42:11|2020-04-17 17:42:11
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|bigint(20)|No|
+|name|varchar(255)|No|
+|**email**|varchar(255)|No|
+|email_verified_at|timestamp|Yes|NULL
+|password|varchar(255)|No|
+|remember_token|varchar(100)|Yes|NULL
+|created_at|timestamp|Yes|NULL
+|updated_at|timestamp|Yes|NULL
+== Dumping data for table users
+
+|1|Diyora|azimova86@outlook.com|NULL|$2y$10$E/W7JAPhyguCEWEC.muIS.CA1Ahh/ciVzbPqmiglOelZ2sX/35wJi|NULL|2020-04-17 17:28:00|2020-04-17 17:28:00
